@@ -147,10 +147,10 @@ multicuts = [
 cfg = Configurator(
     parameters = parameters,
     datasets = {
-        "jsons": ["datasets/MC_QCD_MuEnriched_run3_redirector.json",
-                  "datasets/MC_QCD_Madgraph_run3_redirector.json",
+        "jsons": ["datasets/MC_QCD_MuEnriched_run3_redirector_global.json",
+                  "datasets/MC_QCD_Madgraph_run3_redirector_global.json",
                   "datasets/MC_VJets_run3_redirector.json",
-                  "datasets/MC_TTto4Q_run3_redirector.json",
+                  "datasets/MC_TTto4Q_run3_redirector_global.json",
                   "datasets/MC_singletop_run3_redirector.json",
                   "datasets/DATA_BTagMu_run3_redirector.json"],
         "filter" : {

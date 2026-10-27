@@ -47,6 +47,7 @@ class FixedJetsSoftdropMassCalibrator(JetsSoftdropMassCalibrator):
                 events=events,
                 subjet_type = subjet_type,   # AK4PFPuppi
                 jet_coll_name=jet_coll_name, # AK8PFPuppi
+		nano_version = get_nano_version(events, self.params, self._year),
                 chunk_metadata={
                     "year": self._year,
                     "isMC": self.metadata["isMC"],

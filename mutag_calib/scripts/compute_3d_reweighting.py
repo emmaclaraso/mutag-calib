@@ -78,7 +78,6 @@ pt_eta_tau21_3d_maps = [
 ]
 
 def pt_reweighting(accumulator, histname, output, test=False, overwrite=False, data_year=None, mc_year=None):
-    years = accumulator["datasets_metadata"]["by_datataking_period"].keys()
     h = accumulator['variables'][histname]
     samples = h.keys()
     samples_data = list(filter(lambda d: 'DATA' in d, samples))

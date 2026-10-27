@@ -21,6 +21,7 @@ localdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Loading default parameters
 from pocket_coffea.parameters import defaults
 default_parameters = defaults.get_default_parameters()
+
 defaults.register_configuration_dir("config_dir", localdir+"/params")
 
 parameters = defaults.merge_parameters_from_files(default_parameters,
@@ -138,10 +139,10 @@ multicuts = [
 cfg = Configurator(
     parameters = parameters,
     datasets = {
-        "jsons": ["datasets/MC_QCD_MuEnriched_run3_redirector.json",
-                  "datasets/MC_QCD_Madgraph_run3_redirector.json",
+        "jsons": ["datasets/MC_QCD_MuEnriched_run3_redirector_global_clean.json",
+                  "datasets/MC_QCD_Madgraph_run3_redirector_global.json",
                   "datasets/MC_VJets_run3_redirector.json",
-                  "datasets/MC_TTto4Q_run3_redirector.json",
+                  "datasets/MC_TTto4Q_run3_redirector_global.json",
                   "datasets/MC_singletop_run3_redirector.json",
                   "datasets/DATA_BTagMu_run3_redirector.json"],
         "filter" : {
